@@ -4,6 +4,10 @@ class Property
 
     included do
       include_concern :geo_locatable, from: :on_the_map
+
+      after_initialize do
+        configure_location
+      end
     end
 
     def location= location

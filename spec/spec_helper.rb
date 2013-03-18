@@ -24,10 +24,6 @@ Spork.prefork do
   # Configure Rails Envinronment
   ENV["RAILS_ENV"] = "test"
 
-  # load support models
-  Dir["#{File.dirname(__FILE__)}/support/models/*.rb"].each { |f| require f }
-  Dir["#{File.dirname(__FILE__)}/support/models/**/*.rb"].each { |f| require f }
-
   require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 
   require "rails/test_help"

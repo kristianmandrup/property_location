@@ -10,8 +10,12 @@ Concerns:
 
 ## Controllers
 
-Pending
+Pending...
 
 ## Views
 
-Pending
+Pending...
+
+## Copyright
+
+See LICENSE file

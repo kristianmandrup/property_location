@@ -19,10 +19,9 @@ gem 'sugar-high', '~> 0.7.3', github: 'kristianmandrup/sugar-high'
 gem 'hashie',     '~> 1.2'
 gem 'concerned',  '~> 0.1.6', github: 'kristianmandrup/concerned'
 
-gem 'mongoid_geospatial'
-gem 'geocoder'
-
-gem 'on_the_map', '~> 0.1.0', github: 'kristianmandrup/on_the_map'
+gem 'mongoid_geospatial', '>= 2.7.1',   github: 'nofxx/mongoid_geospatial'
+gem 'geocoder',           '>= 1.1',     github: 'alexreisner/geocoder'
+gem 'on_the_map',         '~> 0.1.0',   github: 'kristianmandrup/on_the_map'
 
 gem "rspec-rails", :group => [:test, :development]
 
@@ -39,7 +38,7 @@ group :test do
   gem 'database_cleaner',   '>= 0.8'
 
   # Fake data
-  gem 'ffaker', '~> 1.14.1', :path => '/Users/kmandrup/private/repos/ffaker' # :git => 'git://github.com/kristianmandrup/ffaker.git'
+  gem 'ffaker', '~> 1.14.1', :git => 'git://github.com/kristianmandrup/ffaker.git'
   gem 'fakeweb'
 
   gem 'shoulda'         
