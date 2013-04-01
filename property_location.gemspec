@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'hashie',        '>= 1.2'
   s.add_dependency 'concerned',     '>= 0.1.5'
 
-  s.add_dependency 'on_the_map',    '>= 0.1.4'
+  s.add_dependency 'on_the_map',    '>= 0.1.5'
 
   s.add_dependency 'gmaps4rails'
   s.add_dependency 'geocoder'
