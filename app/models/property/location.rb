@@ -3,7 +3,7 @@ class Property
     extend ActiveSupport::Concern
 
     included do
-      include_concern :geo_locatable, from: :on_the_map
+      include_concern :geo_locatable, :mappable, from: :on_the_map
 
       after_initialize do
         configure_location
@@ -16,7 +16,8 @@ class Property
       geo_address_fields.each do |name|
         setter = "#{name}="
         geo_value = geo_result.send(name)
-        send(setter, geo_value) if geo_value && self.respond_to?(setter)
+
+        self.send(setter, geo_value) if geo_value && self.respond_to?(setter)
       end
     end
 

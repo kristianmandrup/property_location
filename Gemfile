@@ -12,6 +12,8 @@ gemspec
 gem "rspec-rails", :group => [:test, :development]
 
 group :test do  
+  gem 'spork'
+
   # time travel
   gem 'delorean',   '>= 1.1'
 
